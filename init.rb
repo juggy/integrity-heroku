@@ -4,8 +4,8 @@ require "integrity"
 
 Integrity.new(
   :use_basic_auth => true,
-  :admin_username => "admin",
-  :admin_password => "passwd",
+  :admin_username => ENV["ADMIN_USER"],
+  :admin_password => ENV["ADMIN_PASSWORD"],
 
   :database_uri     => ENV["DATABASE_URL"],
   :export_directory => File.dirname(__FILE__) + "/tmp",
