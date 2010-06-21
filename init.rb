@@ -1,4 +1,5 @@
 $LOAD_PATH.unshift(*Dir["#{File.dirname(__FILE__)}/vendor/**/lib"])
+require 'rubygems' unless defined?(Gem)
 gem "data_objects", "= 0.10.0"
 require "integrity"
 
