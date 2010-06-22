@@ -25,7 +25,8 @@ patron -v '0.4.6'
 capybara -v '0.3.8'
 jeweler -v '1.4.0'
 rspec -v '1.3.0'
-cucumber -v '0.6.3'
+gherkin
+cucumber
 mail -v '2.2.4'
 tzinfo -v '0.3.16'
 i18n -v '0.3.0'
