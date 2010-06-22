@@ -26,3 +26,10 @@ task :heroku do
     sh "heroku #{ENV['COMMAND']} --app integrity#{ruby_version}"
   end
 end
+
+desc "Install the gems locally"
+task :install_gems do
+  File.read('.gems').split("\n").each do |g|
+    sh "gem install #{g.gsub(/-s ([\S+])/, '--source http://\1')}"
+  end
+end
