@@ -26,8 +26,8 @@ capybara -v '0.3.8'
 jeweler -v '1.4.0'
 rspec -v '1.3.0'
 rspec -v '2.0.0.beta.20'
-gherkin
-cucumber
+gherkin -v '2.1.5'
+cucumber -v '0.8.5'
 mail -v '2.2.4'
 tzinfo -v '0.3.16'
 i18n -v '0.3.0'
